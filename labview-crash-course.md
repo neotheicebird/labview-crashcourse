@@ -170,7 +170,7 @@ enabling auto-indexing
 * Take 1D array of names of everyone present in class, let the user input a name. Search the array and find out if the name is present and notify user.
 * given any 1D array do `sorting, split into two equal halfs, reverse each half, stitch them together` and return a 1D array
 * create a 2D array of random numbers
-
+--
 ### TO Work on
 * strings, comparison and boolean palettes
 * Loops and Timing (shift register, )
