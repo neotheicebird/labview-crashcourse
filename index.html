@@ -409,24 +409,29 @@ pre .chunk {
     <section class="slide-content"><h3 id="syllabus">Syllabus</h3>
 <p>List of topics we would be discussing in this course:</p>
 <ul>
-<li><a href="./course.html#3">Day-1: Basic introduction to Labview</a></li>
+<li><a href="./course.html#3">Day-1: Introduction to Labview</a></li>
+<li><a href="./course.html#13">Day-2: Arrays and for loop</a></li>
 </ul>
 </section>
   </div>
   <div class="slide hidden " id="slide-3">
+    <section class="slide-content"><h1 id="day-01-introduction-to-labview">Day - 01: Introduction to Labview</h1>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-4">
     <section class="slide-content"><h3 id="what-is-labview-">What is labview?</h3>
 <p>Labview is a Graphical Programming language. You have to use the mouse a lot more than the keyboard. </p>
 <p><strong>Warning:</strong> Possibility of physical damage. Exercise your fingers regularly because drawing programs is fun and we wont stop until our fingers cry for rest! :D</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-4">
+  <div class="slide hidden " id="slide-5">
     <section class="slide-content"><h3 id="data-flow-model">Data flow model</h3>
 <p>Labview follows the data flow model. The program logic is a set of blocks with data flowing in between them. 
 The data flows from blocks to blocks just like electricity flows in an electronic circuit.</p>
 <p><img src="./img/data-flow-model.gif" alt="data flow model"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-5">
+  <div class="slide hidden " id="slide-6">
     <section class="slide-content"><h3 id="gui-is-inevitable-almost-always-">GUI is inevitable (almost always)</h3>
 <p>All programs we write would have a code (called diagram) and a GUI (graphical user interface)
 The two places we frequently work with in labview are:</p>
@@ -436,7 +441,7 @@ The two places we frequently work with in labview are:</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-6">
+  <div class="slide hidden " id="slide-7">
     <section class="slide-content"><h3 id="front-panel">Front panel</h3>
 <p>In the front panel we add controls and indicators required by the program.</p>
 <ul>
@@ -445,41 +450,122 @@ The two places we frequently work with in labview are:</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-7">
+  <div class="slide hidden " id="slide-8">
     <section class="slide-content"><h3 id="front-panel-2">Front panel - 2</h3>
 <p>Example of a front panel:</p>
 <p><img src="./img/front-panel.gif" alt="front-panel"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-8">
+  <div class="slide hidden " id="slide-9">
     <section class="slide-content"><h3 id="block-diagram">Block Diagram</h3>
 <p>Block diagram is the canvas in which we draw our code. We place different blocks called <code>SubVIs</code> and
 connect these blocks using <code>wires</code>.</p>
 <p><img src="./img/block-diagram.gif" alt="block-diagram"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-9">
+  <div class="slide hidden " id="slide-10">
     <section class="slide-content"><h3 id="palettes">Palettes</h3>
 <p>Standard SubVis are present in modules called <code>palettes</code>.
 To view palettes, in <strong>Block diagram &gt;&gt; Right-click</strong> and different Palettes appear. Browse through it to find the block you need.</p>
 <p><img src="./img/palettes.gif" alt="palettes"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-10">
+  <div class="slide hidden " id="slide-11">
     <section class="slide-content"><h3 id="connecting-wires">Connecting wires</h3>
 <p>To connect wires, simply <strong>left click</strong> to snap on to an output node of a block and <strong>left click again</strong> on the input node of another block</p>
 <p>If a wire is not connected properly, it appears as <strong>dashed lines</strong>. Use <strong>Ctrl+Z</strong> to undo or <strong>Ctrl+B</strong> to remove all <strong>broken wires</strong></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-11">
-    <section class="slide-content"><h3 id="exercise">Exercise</h3>
+  <div class="slide hidden " id="slide-12">
+    <section class="slide-content"><h3 id="exercise-01">Exercise -- 01</h3>
 <ul>
 <li>Try placing some SubVIs on the block diagram and connect wires between them</li>
-<li>Given a simple equations like <code>y = 3x - 5</code>, <code>y = 4x^2 + 7x + 6</code>, get <code>x</code> value from user and output <code>y</code></li>
+<li>Given simple equations like <code>y = 3x - 5</code>, <code>y = 4x^2 + 7x + 6</code>, get <code>x</code> value from user and output <code>y</code>
+<em>Hint: use Numeric palette</em></li>
+<li>Dice roll: For every run of a program a random number from 1 to 6 should be shown as output.</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-12">
+  <div class="slide hidden " id="slide-13">
+    <section class="slide-content"><h1 id="day-02-arrays-and-for-loop">Day - 02: Arrays and for loop</h1>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-14">
+    <section class="slide-content"><h3 id="what-are-arrays-">What are arrays?</h3>
+<p>Arrays are a collection of elements of the same datatype. Its like having a stack of money. The value of each note in the stack can vary, but they all belong to the same &#39;data-type&#39; called money.</p>
+<p><img src="./img/money-stack.jpg" alt="money-stack"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-15">
+    <section class="slide-content"><h3 id="examples-of-arrays-and-their-uses">Examples of arrays and their uses</h3>
+<p>Arrays can be formed with strings, numbers, booleans. There are also arrays of special datatypes, which will be discussed later.</p>
+<h2 id="examples">Examples</h2>
+<ul>
+<li>An array of strings is used to handle book names in a library</li>
+<li>Pixels on your mobile screen has a 2-Dimensional array of numbers behind it</li>
+<li>An array of booleans can be used to create a LED blinker with the help of a DAQ</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-16">
+    <section class="slide-content"><h3 id="dimension-of-an-array">Dimension of an array</h3>
+<ul>
+<li>A stack of postcards to deliver to a single street in our city is an 1D array.</li>
+<li>for a city we can have many stacks placed next to each other, with each stack belonging to a corresponding street, would make a 2D array.</li>
+<li>Similarly we can scale to N-Dimension</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-17">
+    <section class="slide-content"><h3 id="creating-an-array-in-front-panel">Creating an array in front panel</h3>
+<p><img src="./img/array-front-panel.gif" alt="array-front-panel"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-18">
+    <section class="slide-content"><h3 id="array-palette">Array palette</h3>
+<p><img src="./img/array-palette.gif" alt="array-palette"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-19">
+    <section class="slide-content"><h3 id="creating-an-array-in-block-diagram">Creating an array in block diagram</h3>
+<p><img src="./img/array-block-diagram.gif" alt="array-block-diagram"></p>
+<h3 id="adding-dimesion-to-an-array">Adding dimesion to an array</h3>
+<p><img src="./img/add-dimension.gif" alt="add-dimension"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-20">
+    <section class="slide-content"><h3 id="for-loop">For loop</h3>
+<p>A for loop is a rectangular structure, the logic in which is repeated N times</p>
+<p><img src="./img/for-loop.gif" alt="for-loop"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-21">
+    <section class="slide-content"><h3 id="working-with-array-using-for-loop">working with array using for loop</h3>
+<p><strong>Auto-indexing</strong>. If you wire an array to a For Loop, you can read and process every element in that array by
+enabling auto-indexing</p>
+<p><img src="./img/auto-indexing.gif" alt="auto-indexing"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-22">
+    <section class="slide-content"><h3 id="exercise-2">Exercise - 2</h3>
+<ul>
+<li>Take two 1D arrays <code>10,20,30,40,50</code> and <code>11,22,33,44,55</code>, add them element-wise and return an array</li>
+<li>Take 1D array of names of everyone present in class, let the user input a name. Search the array and find out if the name is present and notify user.</li>
+<li>given any 1D array do <code>sorting, split into two equal halfs, reverse each half, stitch them together</code> and return a 1D array</li>
+<li>create a 2D array of random numbers</li>
+</ul>
+<h3 id="to-work-on">TO Work on</h3>
+<ul>
+<li>strings, comparison and boolean palettes</li>
+<li>Loops and Timing (shift register, )</li>
+<li>File i/o, Create EXE, Error Handling</li>
+<li>Event structure, state machine (basics)</li>
+<li>Clusters, state machine (intermediate)</li>
+<li>DAQ and MAX</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><div class="author">
   <h1 class="name">Prashanth Gandhiraj</h1>
     <h3 class="twitter">
