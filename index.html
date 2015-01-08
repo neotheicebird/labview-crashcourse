@@ -557,18 +557,91 @@ enabling auto-indexing</p>
 </section>
   </div>
   <div class="slide hidden " id="slide-23">
+    <section class="slide-content"><h1 id="day-03-strings-enum-comparison-and-booleans">Day - 03: Strings, enum, comparison and Booleans</h1>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-24">
+    <section class="slide-content"><h3 id="strings">Strings</h3>
+<p>A string is a set of characters. strings are useful in processing human readable data using labview.</p>
+<p>The most common characters used in string are:</p>
+<ul>
+<li><code>a-z</code> (lowercase alphabets), <code>A-Z</code> (uppercase alphabets), <code>0-9</code> (digits)</li>
+<li><code>.,*&amp;#$%^()!@&quot;&#39;{}[]/\~</code> (Special characters)</li>
+<li><code>\n</code>, <code>\t</code>, <code>\r</code> (Escape codes)</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-25">
+    <section class="slide-content"><h3 id="concatenate-strings">Concatenate strings</h3>
+<p><img src="./img/string-concatenate.gif" alt="string-concatenate"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-26">
+    <section class="slide-content"><h3 id="string-manipulation">String manipulation</h3>
+<p>Strings are manipulated mainly using the following set of SubVis</p>
+<p><img src="./img/string-manipulation.gif" alt="string-manipulation"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-27">
+    <section class="slide-content"><h3 id="string-formatting">String formatting</h3>
+<p>So your code generates some numbers, say your age, But you want to display it as a string to user. For this kind of problems we need the formatting SubVI.</p>
+<p><img src="./img/string-format.gif" alt="string-format"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-28">
+    <section class="slide-content"><h3 id="string-number-conversions">String-Number conversions</h3>
+<p>Another way to add age (number) to your string is by first converting it into a string. For this go to <strong>string palette&gt;&gt;String/Number conversion</strong></p>
+<p><img src="./img/string-number-conversion.gif" alt="string-number-conversion"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-29">
+    <section class="slide-content"><h3 id="shift-register">Shift register</h3>
+<p>If in loops we want to store values of previous iteration, we have to use <strong>shift registers</strong></p>
+<p><img src="./img/shift-register.gif" alt="shift-register"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-30">
+    <section class="slide-content"><h3 id="booleans">Booleans</h3>
+<p><img src="./img/boolean.gif" alt="boolean"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-31">
+    <section class="slide-content"><h3 id="uses-of-boolean">Uses of boolean</h3>
+<p>Booleans are used for Yes/No decisions. Is your age greater than 18? True/False.  1 &gt; 0 = True. All True and False decisions fall under boolean.</p>
+<p>Explore Boolean palette and find out how different blocks work.</p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-32">
+    <section class="slide-content"><h3 id="comparison-palette">Comparison Palette</h3>
+<p>We can compare variables of different datatypes and make decisions in our code.</p>
+<p><img src="./img/comparison.gif" alt="comparison"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-33">
+    <section class="slide-content"><h3 id="exercise-3">Exercise - 3</h3>
+<ul>
+<li>Let user input a 1D array of strings, concatenate the strings in a for loop with <code>\n</code> escape code inbetween</li>
+<li>A robot understands only <code>1&#39;s or 0&#39;s</code>. Convert any number from (0 to 255), convert them into a boolean array and display result with 8 LEDs.</li>
+<li>Given a string <code>s beautiful!World i</code>, using only one SubVi get the string <code>World is beautiful!</code></li>
+<li>1 - Roll a Dice 5 times and store it to an array
+2 - Let user input a lucky number
+3 - If the lucky number is present atleast 2 times in the array, declare the user to be <code>Winner</code> else <code>Loser</code></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-34">
     <section class="slide-content"><h3 id="to-work-on">TO Work on</h3>
 <ul>
 <li>strings, comparison and boolean palettes</li>
-<li>Loops and Timing (shift register, )</li>
-<li>File i/o, Create EXE, Error Handling</li>
-<li>Event structure, state machine (basics)</li>
-<li>Clusters, state machine (intermediate)</li>
+<li>other Loops and Timing (shift register,)</li>
+<li>File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)</li>
+<li>Event structure, enums, state machine (basics)</li>
+<li>Clusters,  state machine (intermediate)</li>
 <li>DAQ and MAX</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-24">
+  <div class="slide hidden" id="slide-35">
     <section class="slide-content"><div class="author">
   <h1 class="name">Prashanth Gandhiraj</h1>
     <h3 class="twitter">

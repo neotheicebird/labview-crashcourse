@@ -112,7 +112,6 @@ Arrays are a collection of elements of the same datatype. Its like having a stac
 ![money-stack](./img/money-stack.jpg)
 
 --
-
 ### Examples of arrays and their uses
 
 Arrays can be formed with strings, numbers, booleans. There are also arrays of special datatypes, which will be discussed later.
@@ -163,7 +162,6 @@ enabling auto-indexing
 
 ![auto-indexing](./img/auto-indexing.gif)
 --
-
 ### Exercise - 2
 
 * Take two 1D arrays `10,20,30,40,50` and `11,22,33,44,55`, add them element-wise and return an array
@@ -171,10 +169,76 @@ enabling auto-indexing
 * given any 1D array do `sorting, split into two equal halfs, reverse each half, stitch them together` and return a 1D array
 * create a 2D array of random numbers
 --
+# Day - 03: Strings, enum, comparison and Booleans
+
+--
+### Strings
+
+A string is a set of characters. strings are useful in processing human readable data using labview.
+
+The most common characters used in string are:
+* `a-z` (lowercase alphabets), `A-Z` (uppercase alphabets), `0-9` (digits)
+* `.,*&#$%^()!@"'{}[]/\~` (Special characters)
+* `\n`, `\t`, `\r` (Escape codes)
+--
+### Concatenate strings
+
+![string-concatenate](./img/string-concatenate.gif)
+--
+### String manipulation
+
+Strings are manipulated mainly using the following set of SubVis
+
+![string-manipulation](./img/string-manipulation.gif)
+--
+### String formatting
+
+So your code generates some numbers, say your age, But you want to display it as a string to user. For this kind of problems we need the formatting SubVI.
+
+![string-format](./img/string-format.gif)
+
+--
+### String-Number conversions
+
+Another way to add age (number) to your string is by first converting it into a string. For this go to **string palette>>String/Number conversion**
+
+![string-number-conversion](./img/string-number-conversion.gif)
+--
+### Shift register
+
+If in loops we want to store values of previous iteration, we have to use **shift registers**
+
+![shift-register](./img/shift-register.gif)
+--
+### Booleans
+
+![boolean](./img/boolean.gif)
+--
+### Uses of boolean
+
+Booleans are used for Yes/No decisions. Is your age greater than 18? True/False.  1 > 0 = True. All True and False decisions fall under boolean.
+
+Explore Boolean palette and find out how different blocks work.
+--
+### Comparison Palette
+
+We can compare variables of different datatypes and make decisions in our code.
+
+![comparison](./img/comparison.gif)
+--
+### Exercise - 3
+* Let user input a 1D array of strings, concatenate the strings in a for loop with `\n` escape code inbetween
+* A robot understands only `1's or 0's`. Convert any number from (0 to 255), convert them into a boolean array and display result with 8 LEDs.
+* Given a string `s beautiful!World i`, using only one SubVi get the string `World is beautiful!`
+* 1 - Roll a Dice 5 times and store it to an array
+  2 - Let user input a lucky number
+  3 - If the lucky number is present atleast 2 times in the array, declare the user to be `Winner` else `Loser`
+
+--
 ### TO Work on
 * strings, comparison and boolean palettes
-* Loops and Timing (shift register, )
-* File i/o, Create EXE, Error Handling
-* Event structure, state machine (basics)
-* Clusters, state machine (intermediate)
+* other Loops and Timing (shift register,)
+* File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)
+* Event structure, enums, state machine (basics)
+* Clusters,  state machine (intermediate)
 * DAQ and MAX
