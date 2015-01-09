@@ -270,6 +270,8 @@ For example, if user selects `hot`, you can tell the user `Welcome to chennai!`.
 --
 ### Exercise - 4 - part-2
 * Write a program that asks the user for a number `n` and gives him the possibility to choose between computing the `sum` and computing the `product` of `1,. . .,n`.
+--
+### Exercise - 4 - part-3
 * Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array `["Hello", "World", "in", "a", "frame"]` gets printed as. Use `while-loop`:
 
 *********
@@ -280,7 +282,7 @@ For example, if user selects `hot`, you can tell the user `Welcome to chennai!`.
 * frame *
 *********
 --
-### Exercise - 4 - part-3
+### Exercise - 4 - part-4
 * Make a digital clock that displays time in format `HH-MM-SS AM/PM`.
 * Find out and implement a sorting algorithm for any given array of integers (without using sort array from array palette).
 --
