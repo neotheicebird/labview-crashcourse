@@ -242,6 +242,43 @@ We can compare variables of different datatypes and make decisions in our code.
   3 - If the lucky number is present atleast 2 times in the array, declare the user to be `Winner` else `Loser`
 
 --
+### While loop
+While loop repeats execution of its contents unless some conditions are met. Make a condition (say check if iteration i>10) and wire it to condition terminal.
+
+![while-loop](./img/while-loop.gif)
+--
+### Case structure
+Used if you want to execute two different set of codes for different conditions. Like if it is raining outside, I will take an umbrella, If it is hot outside, I will use sunscreen, and If it is cold outside, I will use some cream.
+
+![case](./img/case.gif)
+--
+### Timed loops
+Sometimes loops have to be run slowly than it can, so that the processor is not under heavy load. Using `wait` inside loops helps in using resources more aptly as the solution needs.
+
+![wait](./img/wait.gif)
+--
+### Date and time
+Timing palette has all that we need to bring time into the picture. If we want to add timestamps to our code, to show the user date and time.
+
+![date-time](./img/date-time.gif)
+--
+### Exercise - 4
+* Make an enum with keys `hot, warm, cold`. Using a case structure and an infinite loop, display a custom message for each selection that the user makes anytime the program runs (dont forget to add a wait in the loop). 
+For example, if user selects `hot`, you can tell the user `Welcome to chennai!`.
+* Download [temperature.vi](./problems/temperature.vi), [temperatures.csv](./problems/temperatures.csv) and add code such that `Read one temperature value per second. if temperature > 50 say to user 'Too hot!' and stop program`
+* Write a program that asks the user for a number `n` and gives him the possibility to choose between computing the `sum` and computing the `product` of `1,. . .,n`.
+* Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array `["Hello", "World", "in", "a", "frame"]` gets printed as. Use `while-loop`:
+
+*********
+* Hello *
+* World *
+* in    *
+* a     *
+* frame *
+*********
+* Make a digital clock that displays time in format `HH-MM-SS AM/PM`.
+* Find out and implement a sorting algorithm for any given array of integers (without using sort array from array palette).
+--
 ### TO Work on
 * other Loops and Timing (shift register,)
 * File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)
