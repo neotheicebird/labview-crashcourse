@@ -19,6 +19,7 @@ List of topics we would be discussing in this course:
 
 * [Day-1: Introduction to Labview](./course.html#3)
 * [Day-2: Arrays and for loop](./course.html#13)
+* [Day-3: Strings, enum, Boolean and Comparison](./course.html#13)
 
 --
 
@@ -210,6 +211,12 @@ If in loops we want to store values of previous iteration, we have to use **shif
 
 ![shift-register](./img/shift-register.gif)
 --
+### Enum
+
+An `Enum` is a selectable list which gives out an integer
+
+![enum](./img/enum)
+--
 ### Booleans
 
 ![boolean](./img/boolean.gif)
@@ -236,7 +243,6 @@ We can compare variables of different datatypes and make decisions in our code.
 
 --
 ### TO Work on
-* strings, comparison and boolean palettes
 * other Loops and Timing (shift register,)
 * File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)
 * Event structure, enums, state machine (basics)
