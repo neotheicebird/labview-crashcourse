@@ -411,6 +411,7 @@ pre .chunk {
 <ul>
 <li><a href="./course.html#3">Day-1: Introduction to Labview</a></li>
 <li><a href="./course.html#13">Day-2: Arrays and for loop</a></li>
+<li><a href="./course.html#13">Day-3: Strings, enum, Boolean and Comparison</a></li>
 </ul>
 </section>
   </div>
@@ -601,23 +602,29 @@ enabling auto-indexing</p>
 </section>
   </div>
   <div class="slide hidden " id="slide-30">
+    <section class="slide-content"><h3 id="enum">Enum</h3>
+<p>An <code>Enum</code> is a selectable list which gives out an integer</p>
+<p><img src="./img/enum" alt="enum"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-31">
     <section class="slide-content"><h3 id="booleans">Booleans</h3>
 <p><img src="./img/boolean.gif" alt="boolean"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-31">
+  <div class="slide hidden " id="slide-32">
     <section class="slide-content"><h3 id="uses-of-boolean">Uses of boolean</h3>
 <p>Booleans are used for Yes/No decisions. Is your age greater than 18? True/False.  1 &gt; 0 = True. All True and False decisions fall under boolean.</p>
 <p>Explore Boolean palette and find out how different blocks work.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-32">
+  <div class="slide hidden " id="slide-33">
     <section class="slide-content"><h3 id="comparison-palette">Comparison Palette</h3>
 <p>We can compare variables of different datatypes and make decisions in our code.</p>
 <p><img src="./img/comparison.gif" alt="comparison"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-33">
+  <div class="slide hidden " id="slide-34">
     <section class="slide-content"><h3 id="exercise-3">Exercise - 3</h3>
 <ul>
 <li>Let user input a 1D array of strings, concatenate the strings in a for loop with <code>\n</code> escape code inbetween</li>
@@ -629,10 +636,61 @@ enabling auto-indexing</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-34">
+  <div class="slide hidden " id="slide-35">
+    <section class="slide-content"><h1 id="day-04-while-loop">Day - 04: While loop</h1>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-36">
+    <section class="slide-content"><h3 id="while-loop">While loop</h3>
+<p>While loop repeats execution of its contents unless some conditions are met. Make a condition (say check if iteration i&gt;10) and wire it to condition terminal.</p>
+<p><img src="./img/while-loop.gif" alt="while-loop"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-37">
+    <section class="slide-content"><h3 id="case-structure">Case structure</h3>
+<p>Used if you want to execute two different set of codes for different conditions. Like if it is raining outside, I will take an umbrella, If it is hot outside, I will use sunscreen, and If it is cold outside, I will use some cream.</p>
+<p><img src="./img/case.gif" alt="case"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-38">
+    <section class="slide-content"><h3 id="delay-in-loops">Delay in loops</h3>
+<p>Sometimes loops have to be run slowly than it can, so that the processor is not under heavy load. Using <code>wait</code> inside loops helps in using resources more aptly as the solution needs.</p>
+<p><img src="./img/wait.gif" alt="wait"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-39">
+    <section class="slide-content"><h3 id="date-and-time">Date and time</h3>
+<p>Timing palette has all that we need to bring time into the picture. If we want to add timestamps to our code, to show the user date and time.</p>
+<p><img src="./img/date-time.gif" alt="date-time"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-40">
+    <section class="slide-content"><h3 id="exercise-4">Exercise - 4</h3>
+<ul>
+<li>Make an enum with keys <code>hot, warm, cold</code>. Using a case structure and an infinite loop, display a custom message for each selection that the user makes anytime the program runs (dont forget to add a wait in the loop). 
+For example, if user selects <code>hot</code>, you can tell the user <code>Welcome to chennai!</code>.</li>
+<li>Download <a href="./problems/temperature.vi">temperature.vi</a>, <a href="./problems/temperatures.csv">temperatures.csv</a> and add code such that <code>Read one temperature value per second. if temperature &gt; 50 say to user &#39;Too hot!&#39; and stop program</code></li>
+<li>Write a program that asks the user for a number <code>n</code> and gives him the possibility to choose between computing the <code>sum</code> and computing the <code>product</code> of <code>1,. . .,n</code>.</li>
+<li>Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array <code>[&quot;Hello&quot;, &quot;World&quot;, &quot;in&quot;, &quot;a&quot;, &quot;frame&quot;]</code> gets printed as. Use <code>while-loop</code>:</li>
+</ul>
+<hr>
+<ul>
+<li>Hello *</li>
+<li>World *</li>
+<li>in    *</li>
+<li>a     *</li>
+<li>frame *</li>
+</ul>
+<hr>
+<ul>
+<li>Make a digital clock that displays time in format <code>HH-MM-SS AM/PM</code>.</li>
+<li>Find out and implement a sorting algorithm for any given array of integers (without using sort array from array palette).</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-41">
     <section class="slide-content"><h3 id="to-work-on">TO Work on</h3>
 <ul>
-<li>strings, comparison and boolean palettes</li>
 <li>other Loops and Timing (shift register,)</li>
 <li>File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)</li>
 <li>Event structure, enums, state machine (basics)</li>
@@ -641,7 +699,7 @@ enabling auto-indexing</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-35">
+  <div class="slide hidden" id="slide-42">
     <section class="slide-content"><div class="author">
   <h1 class="name">Prashanth Gandhiraj</h1>
     <h3 class="twitter">

@@ -240,7 +240,8 @@ We can compare variables of different datatypes and make decisions in our code.
 * 1 - Roll a Dice 5 times and store it to an array
   2 - Let user input a lucky number
   3 - If the lucky number is present atleast 2 times in the array, declare the user to be `Winner` else `Loser`
-
+--
+# Day - 04: While loop
 --
 ### While loop
 While loop repeats execution of its contents unless some conditions are met. Make a condition (say check if iteration i>10) and wire it to condition terminal.
@@ -252,7 +253,7 @@ Used if you want to execute two different set of codes for different conditions.
 
 ![case](./img/case.gif)
 --
-### Timed loops
+### Delay in loops
 Sometimes loops have to be run slowly than it can, so that the processor is not under heavy load. Using `wait` inside loops helps in using resources more aptly as the solution needs.
 
 ![wait](./img/wait.gif)
