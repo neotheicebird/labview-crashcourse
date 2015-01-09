@@ -263,10 +263,12 @@ Timing palette has all that we need to bring time into the picture. If we want t
 
 ![date-time](./img/date-time.gif)
 --
-### Exercise - 4
+### Exercise - 4 - part-1
 * Make an enum with keys `hot, warm, cold`. Using a case structure and an infinite loop, display a custom message for each selection that the user makes anytime the program runs (dont forget to add a wait in the loop). 
 For example, if user selects `hot`, you can tell the user `Welcome to chennai!`.
 * Download [temperature.vi](./problems/temperature.vi), [temperatures.csv](./problems/temperatures.csv) and add code such that `Read one temperature value per second. if temperature > 50 say to user 'Too hot!' and stop program`
+--
+### Exercise - 4 - part-2
 * Write a program that asks the user for a number `n` and gives him the possibility to choose between computing the `sum` and computing the `product` of `1,. . .,n`.
 * Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array `["Hello", "World", "in", "a", "frame"]` gets printed as. Use `while-loop`:
 
@@ -277,6 +279,8 @@ For example, if user selects `hot`, you can tell the user `Welcome to chennai!`.
 * a     *
 * frame *
 *********
+--
+### Exercise - 4 - part-3
 * Make a digital clock that displays time in format `HH-MM-SS AM/PM`.
 * Find out and implement a sorting algorithm for any given array of integers (without using sort array from array palette).
 --
