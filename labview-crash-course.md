@@ -274,13 +274,13 @@ For example, if user selects `hot`, you can tell the user `Welcome to chennai!`.
 ### Exercise - 4 - part-3
 * Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array `["Hello", "World", "in", "a", "frame"]` gets printed as. Use `while-loop`:
 
-*********
-* Hello *
-* World *
-* in    *
-* a     *
-* frame *
-*********
+    *********
+    * Hello *
+    * World *
+    * in    *
+    * a     *
+    * frame *
+    *********
 --
 ### Exercise - 4 - part-4
 * Make a digital clock that displays time in format `HH-MM-SS AM/PM`.
