@@ -269,10 +269,10 @@ For example, if user selects `hot`, you can tell the user `Welcome to chennai!`.
 * Download [temperature.vi](./problems/temperature.vi), [temperatures.csv](./problems/temperatures.csv) and add code such that `Read one temperature value per second. if temperature > 50 say to user 'Too hot!' and stop program`
 --
 ### Exercise - 4 - part-2
-* Write a program that asks the user for a number `n` and gives him the possibility to choose between computing the `sum` and computing the `product` of `1,. . .,n`.
+* Write a program that asks the user for a number `n` and gives him the possibility to choose between computing the `sum` and computing the `product` of `1,. . .,n`. And returns the value of `sum()` or `product()` obtained.
 --
 ### Exercise - 4 - part-3
-* Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array `["Hello", "World", "in", "a", "frame"]` gets printed as. Use `while-loop`:
+* Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array `["Hello", "World", "in", "a", "frame"]` gets printed as(Use `while-loop`):
 
     *********
     * Hello *
@@ -286,9 +286,53 @@ For example, if user selects `hot`, you can tell the user `Welcome to chennai!`.
 * Make a digital clock that displays time in format `HH-MM-SS AM/PM`.
 * Find out and implement a sorting algorithm for any given array of integers (without using sort array from array palette).
 --
+# Day - 05: Files, and Event structure
+--
+### File Palette
+
+Using file palette we can read and write files.
+
+A text file example:
+![read-file](./img/read-file.gif)
+--
+### Types of files
+
+Some common file types that we use mostly are:
+* Text files
+* Binary files
+--
+### Manipulating file path
+
+File path is the address to reach a file, to read or write or append or delete or any operations on it.
+![build-strip-path](./img/build-strip-path.gif)
+--
+### file constants
+
+File constants can be used to get default directories, the VIs path, VIs directory.
+
+![file-constants](./img/file-constants.gif)
+--
+### Event structure
+
+An event structure is used to capture events like user mouse click or value change in front-panel and more...
+![event-structure](./img/event-structure.gif)
+--
+### Exercise - 5 - part-1
+* Using LV, Create a textfile in you name (name.txt) and write in it `Hello world!`
+* Read the [sample.txt](./problems/sample.txt) provided using LV and display the contents
+--
+### Exercise - 5 - part-2
+* Place an event structure in an infinite while loop and place atleast 3 different controls (numeric, buttons, sliders etc).
+  On `value change` of any of the controls, the latest of which was changed, its name should be displayed on a string indicator `last_changed`
+--
+### Exercise - 5 - part-3
+* Let user give a file directory path, filename and text input in a continuously running VI. Once a button `write this` is clicked, a new file of the name
+given should be created in the destination given, with the contents typed by the user.
+
+--
 ### TO Work on
-* other Loops and Timing (shift register,)
 * File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)
 * Event structure, enums, state machine (basics)
 * Clusters,  state machine (intermediate)
 * DAQ and MAX
+* A glimpse of advanced topics: Property nodes, invoke nodes, 

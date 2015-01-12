@@ -676,14 +676,14 @@ For example, if user selects <code>hot</code>, you can tell the user <code>Welco
   <div class="slide hidden " id="slide-41">
     <section class="slide-content"><h3 id="exercise-4-part-2">Exercise - 4 - part-2</h3>
 <ul>
-<li>Write a program that asks the user for a number <code>n</code> and gives him the possibility to choose between computing the <code>sum</code> and computing the <code>product</code> of <code>1,. . .,n</code>.</li>
+<li>Write a program that asks the user for a number <code>n</code> and gives him the possibility to choose between computing the <code>sum</code> and computing the <code>product</code> of <code>1,. . .,n</code>. And returns the value of <code>sum()</code> or <code>product()</code> obtained.</li>
 </ul>
 </section>
   </div>
   <div class="slide hidden " id="slide-42">
     <section class="slide-content"><h3 id="exercise-4-part-3">Exercise - 4 - part-3</h3>
 <ul>
-<li>Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array <code>[&quot;Hello&quot;, &quot;World&quot;, &quot;in&quot;, &quot;a&quot;, &quot;frame&quot;]</code> gets printed as. Use <code>while-loop</code>:</li>
+<li>Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array <code>[&quot;Hello&quot;, &quot;World&quot;, &quot;in&quot;, &quot;a&quot;, &quot;frame&quot;]</code> gets printed as(Use <code>while-loop</code>):</li>
 </ul>
 <pre><code>*********
 * Hello *
@@ -703,17 +703,79 @@ For example, if user selects <code>hot</code>, you can tell the user <code>Welco
 </section>
   </div>
   <div class="slide hidden " id="slide-44">
+    <section class="slide-content"><h1 id="day-05-files-and-event-structure">Day - 05: Files, and Event structure</h1>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-45">
+    <section class="slide-content"><h3 id="file-palette">File Palette</h3>
+<p>Using file palette we can read and write files.</p>
+<p>A text file example:
+<img src="./img/read-file.gif" alt="read-file"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-46">
+    <section class="slide-content"><h3 id="types-of-files">Types of files</h3>
+<p>Some common file types that we use mostly are:</p>
+<ul>
+<li>Text files</li>
+<li>Binary files</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-47">
+    <section class="slide-content"><h3 id="manipulating-file-path">Manipulating file path</h3>
+<p>File path is the address to reach a file, to read or write or append or delete or any operations on it.
+<img src="./img/build-strip-path.gif" alt="build-strip-path"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-48">
+    <section class="slide-content"><h3 id="file-constants">file constants</h3>
+<p>File constants can be used to get default directories, the VIs path, VIs directory.</p>
+<p><img src="./img/file-constants.gif" alt="file-constants"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-49">
+    <section class="slide-content"><h3 id="event-structure">Event structure</h3>
+<p>An event structure is used to capture events like user mouse click or value change in front-panel and more...
+<img src="./img/event-structure.gif" alt="event-structure"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-50">
+    <section class="slide-content"><h3 id="exercise-5-part-1">Exercise - 5 - part-1</h3>
+<ul>
+<li>Using LV, Create a textfile in you name (name.txt) and write in it <code>Hello world!</code></li>
+<li>Read the <a href="./problems/sample.txt">sample.txt</a> provided using LV and display the contents</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-51">
+    <section class="slide-content"><h3 id="exercise-5-part-2">Exercise - 5 - part-2</h3>
+<ul>
+<li>Place an event structure in an infinite while loop and place atleast 3 different controls (numeric, buttons, sliders etc).
+On <code>value change</code> of any of the controls, the latest of which was changed, its name should be displayed on a string indicator <code>last_changed</code></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-52">
+    <section class="slide-content"><h3 id="exercise-5-part-3">Exercise - 5 - part-3</h3>
+<ul>
+<li>Let user give a file directory path, filename and text input in a continuously running VI. Once a button <code>write this</code> is clicked, a new file of the name
+given should be created in the destination given, with the contents typed by the user.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-53">
     <section class="slide-content"><h3 id="to-work-on">TO Work on</h3>
 <ul>
-<li>other Loops and Timing (shift register,)</li>
 <li>File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)</li>
 <li>Event structure, enums, state machine (basics)</li>
 <li>Clusters,  state machine (intermediate)</li>
 <li>DAQ and MAX</li>
+<li>A glimpse of advanced topics: Property nodes, invoke nodes,</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-45">
+  <div class="slide hidden" id="slide-54">
     <section class="slide-content"><div class="author">
   <h1 class="name">Prashanth Gandhiraj</h1>
     <h3 class="twitter">
