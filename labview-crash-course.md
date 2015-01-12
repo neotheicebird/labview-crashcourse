@@ -20,6 +20,8 @@ List of topics we would be discussing in this course:
 * [Day-1: Introduction to Labview](./course.html#3)
 * [Day-2: Arrays and for loop](./course.html#13)
 * [Day-3: Strings, enum, Boolean and Comparison](./course.html#13)
+* [Day - 04: While loop](./course.html#13)
+* [Day - 05: Files, and Event structure](./course.html#13)
 
 --
 
