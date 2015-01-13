@@ -346,7 +346,7 @@ To create any software for a defined problem, this is one of the methods to work
 4. Test and verify the implementation.
 5. Maintain and update the implementation.
 --
-### scenario
+### Scenario
 During the scenario stage of the software development method, you define
 what your problem is so that you can approach it with all the necessary
 factors identified. You can remove extraneous factors during this phase and
