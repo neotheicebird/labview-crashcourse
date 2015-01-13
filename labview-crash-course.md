@@ -12,7 +12,6 @@ controls: true
 ## First look at labview from A - Z
 
 --
-
 ### Syllabus
 
 List of topics we would be discussing in this course:
@@ -20,13 +19,11 @@ List of topics we would be discussing in this course:
 * [Day-1: Introduction to Labview](./course.html#3)
 * [Day-2: Arrays and for loop](./course.html#13)
 * [Day-3: Strings, enum, Boolean and Comparison](./course.html#13)
-* [Day - 04: While loop](./course.html#13)
-* [Day - 05: Files, and Event structure](./course.html#13)
+* [Day-4: While loop](./course.html#13)
+* [Day-5: Files, and Event structure](./course.html#13)
 
 --
-
 # Day - 01: Introduction to Labview
-
 --
 
 ### What is labview?
@@ -331,6 +328,69 @@ An event structure is used to capture events like user mouse click or value chan
 * Let user give a file directory path, filename and text input in a continuously running VI. Once a button `write this` is clicked, a new file of the name
 given should be created in the destination given, with the contents typed by the user.
 
+--
+# Day - 06: Test what we learnt and some philosophy!
+--
+### 15 Questions, 45 minutes
+Access this form and submit your answers. 
+
+[test-01](https://docs.google.com/forms/d/1YQxDD_IVMAaq2yPeJQrI5E5ekSxnY4RwtjZO7RdfJuM/viewform?usp=send_form)
+--
+### Programming philosophy - 01
+
+To create any software for a defined problem, this is one of the methods to work on it (The Software Method):
+
+1. Define the problem (scenario).
+2. Design an algorithm and/or flowchart.
+3. Implement the design.
+4. Test and verify the implementation.
+5. Maintain and update the implementation.
+--
+### scenario
+During the scenario stage of the software development method, you define
+what your problem is so that you can approach it with all the necessary
+factors identified. You can remove extraneous factors during this phase and
+focus on the core problem that you must solve. How you identify the
+problem initially can save you time while you design and implement a
+solution
+--
+### Design
+* Identify the Inputs
+* Identify the Outputs
+* Identify Additional Requirements - like units of inputs.
+* Algorithm or flowchart or state diagram to solve the problem
+--
+### Implementation
+In the implementation stage, you create code for your algorithm or
+flowchart. Because LabVIEW is a graphical programming
+language, the flowchart works much the same way.
+--
+### Testing
+Testing and verifying is an important part of the software development
+method. Make sure to test your implementation with data that is both logical
+and illogical for the solution you created. Testing logical data verifies that
+the inputs produce the expected result. By testing illogical data, you can test
+to see if the code has effective error handling
+--
+### Maintenance
+
+Maintenance is the ongoing process of resolving programming errors and
+adding parallel construction changes to the original solution for a problem. 
+--
+### Exercises - 6 - part-1
+* Go to [gliffy](http://www.gliffy.com) or choose any other diagram editor. Create a flow chart for the following problem.
+
+This VI takes an input array that contains a mixture of positive and negative values and separates that array into two smaller arrays: one that contains the negative values and one that contains the positive values.
+The Initialize Array function and Build Array function are used and the For Loop sets its count by auto-indexing the input array.
+--
+### Exercises - 6 - part-2
+* Implement the previous problem
+* Implementing Basic Set Theory: The Intersection and/or Union of Two Sets.
+Process two sets of data and return the intersection and/or the union of the two sets. The sets are represented by one-dimensional arrays.
+--
+### References
+
+* Questions in Test-01 are taken from [CLAD Q&A from NI](http://www.ni.com/gate/gb/GB_EKITCLADEXMPRP/US). 
 --
 ### TO Work on
 * File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)
