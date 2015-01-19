@@ -393,7 +393,8 @@ Process two sets of data and return the intersection and/or the union of the two
 * Questions in Test-01 are taken from [CLAD Q&A from NI](http://www.ni.com/gate/gb/GB_EKITCLADEXMPRP/US). 
 --
 # Day - 07: Clusters
-
+--
+### Cluster
 When we want to group a set of variables/controls/indicators of different datatypes, we use a cluster.
 ![cluster-control](./img/cluster.gif)
 --
