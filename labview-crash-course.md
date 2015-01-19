@@ -395,18 +395,18 @@ Process two sets of data and return the intersection and/or the union of the two
 # Day - 07: Clusters
 
 When we want to group a set of variables/controls/indicators of different datatypes, we use a cluster.
-[cluster-control](./img/cluster.gif)
+![cluster-control](./img/cluster.gif)
 --
 # Cluster indicator, controls and constant
 
 A cluster can be set as a control, indicator or a constant.
 
-[cluster](./img/cluster-ctrl-indicator-constant.gif)
+![cluster](./img/cluster-ctrl-indicator-constant.gif)
 --
 # Cluster palette
 
 Cluster palette contains VIs that can be used to manipulate clusters.
-[cluster-palette](./img/cluster-palette.gif)
+![cluster-palette](./img/cluster-palette.gif)
 --
 ### TO Work on
 * waveform graph, Create EXE
