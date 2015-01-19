@@ -392,8 +392,25 @@ Process two sets of data and return the intersection and/or the union of the two
 
 * Questions in Test-01 are taken from [CLAD Q&A from NI](http://www.ni.com/gate/gb/GB_EKITCLADEXMPRP/US). 
 --
+# Day - 07: Clusters
+
+When we want to group a set of variables/controls/indicators of different datatypes, we use a cluster.
+[cluster-control](./img/cluster.gif)
+
+--
+# Cluster indicator, controls and constant
+
+A cluster can be set as a control, indicator or a constant.
+
+[cluster](./img/cluster-ctrl-indicator-constant.gif)
+--
+# Cluster palette
+
+Cluster palette contains VIs that can be used to manipulate clusters.
+[cluster-palette](./img/cluster-palette.gif)
+__
 ### TO Work on
-* File i/o, waveform graph, Create EXE, Error Handling (create a signal file and display it using waveform graph)
+* waveform graph, Create EXE
 * Event structure, enums, state machine (basics)
 * Clusters,  state machine (intermediate)
 * DAQ and MAX
