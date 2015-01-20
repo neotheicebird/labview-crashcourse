@@ -398,16 +398,44 @@ Process two sets of data and return the intersection and/or the union of the two
 When we want to group a set of variables/controls/indicators of different datatypes, we use a cluster.
 ![cluster-control](./img/cluster.gif)
 --
-# Cluster indicator, controls and constant
+### Cluster indicator, controls and constant
 
 A cluster can be set as a control, indicator or a constant.
 
 ![cluster](./img/cluster-ctrl-indicator-constant.gif)
 --
-# Cluster palette
+### Cluster palette
 
 Cluster palette contains VIs that can be used to manipulate clusters.
 ![cluster-palette](./img/cluster-palette.gif)
+--
+# Day - 08: Waveform, Math, and Express VIs
+--
+### Waveform graph
+A waveform graph is used to display waveforms:
+[graph](./img/graph.gif)
+--
+### Math palette
+Math palette is used to generate math functions like sine, cosine, or in cases of fitting data like using least-squares best fit.
+There are many other use cases for this palette.
+[math-palette](./img/math-palette.gif)
+--
+### Generate sine signal
+[sine-signal](./img/sine-signal.gif)
+--
+### Express VIs
+Express VIs make life easier. They are useful when we need to implement things fast and easy, and customization is not very important.
+[express](./img/express.vi)
+--
+### Exercise - 8 - Part 01
+
+- Generate a sine(x) and a cosine(x) signal for the same `x`. prove by plotting the equation `sin(x)^2 + cos(x)^2 = 1`
+- Write a guessing game where the user has to guess a secret number. After every guess the program tells the user whether his number was too large or too small. 
+At the end the number of tries needed should be printed. I counts only as one try if the user inputs the same number consecutively.
+--
+### Exercise - 8 - Part 02
+- Write a function that computes the list of the first 100 Fibonacci numbers.
+- create a SubVi which computes `x^2 + tan(x) + 3`. Plot it continuously using waveform graph, for x being time in seconds from start of the program.
 --
 ### TO Work on
 * waveform graph, Create EXE
