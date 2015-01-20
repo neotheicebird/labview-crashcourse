@@ -413,19 +413,19 @@ Cluster palette contains VIs that can be used to manipulate clusters.
 --
 ### Waveform graph
 A waveform graph is used to display waveforms:
-[graph](./img/graph.gif)
+![graph](./img/graph.gif)
 --
 ### Math palette
 Math palette is used to generate math functions like sine, cosine, or in cases of fitting data like using least-squares best fit.
 There are many other use cases for this palette.
-[math-palette](./img/math-palette.gif)
+![math-palette](./img/math-palette.gif)
 --
 ### Generate sine signal
-[sine-signal](./img/sine-signal.gif)
+![sine-signal](./img/sine-signal.gif)
 --
 ### Express VIs
 Express VIs make life easier. They are useful when we need to implement things fast and easy, and customization is not very important.
-[express](./img/express.vi)
+![express](./img/express.vi)
 --
 ### Exercise - 8 - Part 01
 
