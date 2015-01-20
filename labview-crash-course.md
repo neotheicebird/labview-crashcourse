@@ -425,7 +425,7 @@ There are many other use cases for this palette.
 --
 ### Express VIs
 Express VIs make life easier. They are useful when we need to implement things fast and easy, and customization is not very important.
-![express](./img/express.vi)
+![express](./img/express.gif)
 --
 ### Exercise - 8 - Part 01
 
