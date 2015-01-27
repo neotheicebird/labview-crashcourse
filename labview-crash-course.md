@@ -437,9 +437,45 @@ At the end the number of tries needed should be printed. I counts only as one tr
 - Write a function that computes the list of the first 100 Fibonacci numbers.
 - create a SubVi which computes `x^2 + tan(x) + 3`. Plot it continuously using waveform graph, for x being time in seconds from start of the program.
 --
+# Day 10: State machines: ..continued
+--
+### Use of event structure in poll
+
+Event structure saves effort and is more reactive than handling buttons by any other logic
+![state-machine-event](./img/state-machine-event.gif)
+--
+### Other routing options: Enum arrays
+
+Instead of placing a enum and routing in every case, we can move most of the routing logic to the poll case. 
+Try using a array of enum and some array functions.
+
+![state-machine-enum-array](./img/state-machine-enum-array.gif)
+--
+### Other routing options: array of strings
+
+![state-machine-string-array](./img/state-machine-string-array.gif)
+--
+### Exercise: 10
+
+Create a state diagram and implement a stop watch timer.
+--
+# Day 11: DAQ and MAX
+--
+### DAQ
+
+Data AcQusition card is used to measure electrical signals. NI's DAQ comes in various sizes and form factors, with varying capabilities.
+Primarily used to capture signals, they are easy to configure and use.
+--
+### MAX
+
+The Measurement and Automation eXplorer is a software that comes along with DAQ. It is used to maintain various devices connected or not-connected. We can create devices that simulate real devices and generate simple signal, this is useful to test our code, incase we dont have a device setup realtime.
+--
+### Exercise: 11
+
+- Create a simulation device (any device of your choice), sample the lines at 100Hz, store to a labview database (tdms file). Hint: use DAQ Assistant.
+- Without using DAQ assistant try to generate a continuous sine signal using Analog output.
+--
 ### TO Work on
 * waveform graph, Create EXE
-* Event structure, enums, state machine (basics)
-* Clusters,  state machine (intermediate)
 * DAQ and MAX
 * A glimpse of advanced topics: Property nodes, invoke nodes, 

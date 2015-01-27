@@ -923,17 +923,65 @@ At the end the number of tries needed should be printed. I counts only as one tr
 </section>
   </div>
   <div class="slide hidden " id="slide-75">
+    <section class="slide-content"><h1 id="day-10-state-machines-continued">Day 10: State machines: ..continued</h1>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-76">
+    <section class="slide-content"><h3 id="use-of-event-structure-in-poll">Use of event structure in poll</h3>
+<p>Event structure saves effort and is more reactive than handling buttons by any other logic
+<img src="./img/state-machine-event.gif" alt="state-machine-event"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-77">
+    <section class="slide-content"><h3 id="other-routing-options-enum-arrays">Other routing options: Enum arrays</h3>
+<p>Instead of placing a enum and routing in every case, we can move most of the routing logic to the poll case. 
+Try using a array of enum and some array functions.</p>
+<p><img src="./img/state-machine-enum-array.gif" alt="state-machine-enum-array"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-78">
+    <section class="slide-content"><h3 id="other-routing-options-array-of-strings">Other routing options: array of strings</h3>
+<p><img src="./img/state-machine-string-array.gif" alt="state-machine-string-array"></p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-79">
+    <section class="slide-content"><h3 id="exercise-10">Exercise: 10</h3>
+<p>Create a state diagram and implement a stop watch timer.</p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-80">
+    <section class="slide-content"><h1 id="day-11-daq-and-max">Day 11: DAQ and MAX</h1>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-81">
+    <section class="slide-content"><h3 id="daq">DAQ</h3>
+<p>Data AcQusition card is used to measure electrical signals. NI&#39;s DAQ comes in various sizes and form factors, with varying capabilities.
+Primarily used to capture signals, they are easy to configure and use.</p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-82">
+    <section class="slide-content"><h3 id="max">MAX</h3>
+<p>The Measurement and Automation eXplorer is a software that comes along with DAQ. It is used to maintain various devices connected or not-connected. We can create devices that simulate real devices and generate simple signal, this is useful to test our code, incase we dont have a device setup realtime.</p>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-83">
+    <section class="slide-content"><h3 id="exercise-11">Exercise: 11</h3>
+<ul>
+<li>Create a simulation device (any device of your choice), sample the lines at 100Hz, store to a labview database (tdms file). Hint: use DAQ Assistant.</li>
+<li>Without using DAQ assistant try to generate a continuous sine signal using Analog output.</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden " id="slide-84">
     <section class="slide-content"><h3 id="to-work-on">TO Work on</h3>
 <ul>
 <li>waveform graph, Create EXE</li>
-<li>Event structure, enums, state machine (basics)</li>
-<li>Clusters,  state machine (intermediate)</li>
 <li>DAQ and MAX</li>
 <li>A glimpse of advanced topics: Property nodes, invoke nodes,</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-76">
+  <div class="slide hidden" id="slide-85">
     <section class="slide-content"><div class="author">
   <h1 class="name">Prashanth Gandhiraj</h1>
     <h3 class="twitter">
