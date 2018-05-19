@@ -21,11 +21,18 @@ List of topics we would be discussing in this course:
 * [Day-3: Strings, enum, Boolean and Comparison](./course.html#23)
 * [Day-4: While loop](./course.html#35)
 * [Day-5: Files, and Event structure](./course.html#44)
+
+--
+### Syllabus
+
+List of topics we would be discussing in this course:
+
 * [Day-6: Test what we learnt so far and some programming philosophy](./course.html#53)
 * [Day-7: Clusters](./course.html#64)
 * [Day-8: Waveform, Math, and Express VIs](./course.html#68)
-* [Day-10: State machines](./course.html#75)
-* [Day-11: DAQ and MAX](./course.html#80)
+* [Day-9: State machines](./course.html#75)
+* [Day-10: State machines](./course.html#76)
+* [Day-11: DAQ and MAX](./course.html#81)
 
 --
 # Day - 01: Introduction to Labview
@@ -441,6 +448,8 @@ At the end the number of tries needed should be printed. I counts only as one tr
 ### Exercise - 8 - Part 02
 - Write a function that computes the list of the first 100 Fibonacci numbers.
 - create a SubVi which computes `x^2 + tan(x) + 3`. Plot it continuously using waveform graph, for x being time in seconds from start of the program.
+--
+# Day 9: State machines
 --
 # Day 10: State machines: ..continued
 --
