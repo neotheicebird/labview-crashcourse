@@ -8,7 +8,6 @@
     body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #222;
-  background-color: #f7f7f7;
   font-size: 100%;
 }
 
@@ -16,6 +15,7 @@
   position: absolute;
   top: 0; bottom: 0;
   left: 0; right: 0;
+  background-color: #f7f7f7;
 }
 
 .slide-content {
@@ -139,6 +139,7 @@ pre {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 3px;
+  z-index: 1;
 }
 
 .progress-bar {
@@ -256,140 +257,103 @@ pre {
 }
 
 /*
+
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
 */
 
-code, pre {
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  overflow: auto;
-  padding: 6px 10px;
-}
-
-code {
-  padding: 0 5px;
-}
-
-pre>code {
-  margin: 0; padding: 0;
-  border: none;
-  background: transparent;
-}
-
-pre .comment,
-pre .template_comment,
-pre .diff .header,
-pre .javadoc {
-  color: #998;
-  font-style: italic
-}
-
-pre .keyword,
-pre .css .rule .keyword,
-pre .winutils,
-pre .javascript .title,
-pre .nginx .title,
-pre .subst,
-pre .request,
-pre .status {
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
   color: #333;
-  font-weight: bold
+  background: #f8f8f8;
 }
 
-pre .number,
-pre .hexcolor,
-pre .ruby .constant {
-  color: #099;
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
 }
 
-pre .string,
-pre .tag .value,
-pre .phpdoc,
-pre .tex .formula {
-  color: #d14
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
 }
 
-pre .title,
-pre .id {
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
   color: #900;
-  font-weight: bold
+  font-weight: bold;
 }
 
-pre .javascript .title,
-pre .lisp .title,
-pre .clojure .title,
-pre .subst {
-  font-weight: normal
+.hljs-subst {
+  font-weight: normal;
 }
 
-pre .class .title,
-pre .haskell .type,
-pre .vhdl .literal,
-pre .tex .command {
+.hljs-type,
+.hljs-class .hljs-title {
   color: #458;
-  font-weight: bold
+  font-weight: bold;
 }
 
-pre .tag,
-pre .tag .title,
-pre .rules .property,
-pre .django .tag .keyword {
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
   color: #000080;
-  font-weight: normal
+  font-weight: normal;
 }
 
-pre .attribute,
-pre .variable,
-pre .lisp .body {
-  color: #008080
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
 }
 
-pre .regexp {
-  color: #009926
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
 }
 
-pre .class {
-  color: #458;
-  font-weight: bold
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
 }
 
-pre .symbol,
-pre .ruby .symbol .string,
-pre .lisp .keyword,
-pre .tex .special,
-pre .prompt {
-  color: #990073
-}
-
-pre .built_in,
-pre .lisp .title,
-pre .clojure .built_in {
-  color: #0086b3
-}
-
-pre .preprocessor,
-pre .pi,
-pre .doctype,
-pre .shebang,
-pre .cdata {
+.hljs-meta {
   color: #999;
-  font-weight: bold
+  font-weight: bold;
 }
 
-pre .deletion {
-  background: #fdd
+.hljs-deletion {
+  background: #fdd;
 }
 
-pre .addition {
-  background: #dfd
+.hljs-addition {
+  background: #dfd;
 }
 
-pre .diff .change {
-  background: #0086b3
+.hljs-emphasis {
+  font-style: italic;
 }
 
-pre .chunk {
-  color: #aaa
+.hljs-strong {
+  font-weight: bold;
 }
 
 
@@ -400,41 +364,54 @@ pre .chunk {
     <div class="progress-bar"></div>
   </div>
 
-  <div class="slide " id="slide-1">
+  <div class="slide" id="slide-1">
     <section class="slide-content"><h1 id="labview-101">Labview 101</h1>
 <h2 id="first-look-at-labview-from-a-z">First look at labview from A - Z</h2>
 </section>
   </div>
-  <div class="slide hidden " id="slide-2">
+  <div class="slide hidden" id="slide-2">
     <section class="slide-content"><h3 id="syllabus">Syllabus</h3>
 <p>List of topics we would be discussing in this course:</p>
 <ul>
 <li><a href="./course.html#3">Day-1: Introduction to Labview</a></li>
 <li><a href="./course.html#13">Day-2: Arrays and for loop</a></li>
-<li><a href="./course.html#13">Day-3: Strings, enum, Boolean and Comparison</a></li>
-<li><a href="./course.html#13">Day-4: While loop</a></li>
-<li><a href="./course.html#13">Day-5: Files, and Event structure</a></li>
+<li><a href="./course.html#23">Day-3: Strings, enum, Boolean and Comparison</a></li>
+<li><a href="./course.html#35">Day-4: While loop</a></li>
+<li><a href="./course.html#44">Day-5: Files, and Event structure</a></li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-3">
+  <div class="slide hidden" id="slide-3">
+    <section class="slide-content"><h3 id="syllabus">Syllabus</h3>
+<p>List of topics we would be discussing in this course:</p>
+<ul>
+<li><a href="./course.html#53">Day-6: Test what we learnt so far and some programming philosophy</a></li>
+<li><a href="./course.html#64">Day-7: Clusters</a></li>
+<li><a href="./course.html#68">Day-8: Waveform, Math, and Express VIs</a></li>
+<li><a href="./course.html#75">Day-9: State machines</a></li>
+<li><a href="./course.html#76">Day-10: State machines</a></li>
+<li><a href="./course.html#81">Day-11: DAQ and MAX</a></li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-4">
     <section class="slide-content"><h1 id="day-01-introduction-to-labview">Day - 01: Introduction to Labview</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-4">
+  <div class="slide hidden" id="slide-5">
     <section class="slide-content"><h3 id="what-is-labview-">What is labview?</h3>
 <p>Labview is a Graphical Programming language. You have to use the mouse a lot more than the keyboard. </p>
 <p><strong>Warning:</strong> Possibility of physical damage. Exercise your fingers regularly because drawing programs is fun and we wont stop until our fingers cry for rest! :D</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-5">
+  <div class="slide hidden" id="slide-6">
     <section class="slide-content"><h3 id="data-flow-model">Data flow model</h3>
 <p>Labview follows the data flow model. The program logic is a set of blocks with data flowing in between them. 
 The data flows from blocks to blocks just like electricity flows in an electronic circuit.</p>
 <p><img src="./img/data-flow-model.gif" alt="data flow model"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-6">
+  <div class="slide hidden" id="slide-7">
     <section class="slide-content"><h3 id="gui-is-inevitable-almost-always-">GUI is inevitable (almost always)</h3>
 <p>All programs we write would have a code (called diagram) and a GUI (graphical user interface)
 The two places we frequently work with in labview are:</p>
@@ -444,7 +421,7 @@ The two places we frequently work with in labview are:</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-7">
+  <div class="slide hidden" id="slide-8">
     <section class="slide-content"><h3 id="front-panel">Front panel</h3>
 <p>In the front panel we add controls and indicators required by the program.</p>
 <ul>
@@ -453,33 +430,33 @@ The two places we frequently work with in labview are:</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-8">
+  <div class="slide hidden" id="slide-9">
     <section class="slide-content"><h3 id="front-panel-2">Front panel - 2</h3>
 <p>Example of a front panel:</p>
 <p><img src="./img/front-panel.gif" alt="front-panel"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-9">
+  <div class="slide hidden" id="slide-10">
     <section class="slide-content"><h3 id="block-diagram">Block Diagram</h3>
 <p>Block diagram is the canvas in which we draw our code. We place different blocks called <code>SubVIs</code> and
 connect these blocks using <code>wires</code>.</p>
 <p><img src="./img/block-diagram.gif" alt="block-diagram"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-10">
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><h3 id="palettes">Palettes</h3>
 <p>Standard SubVis are present in modules called <code>palettes</code>.
 To view palettes, in <strong>Block diagram &gt;&gt; Right-click</strong> and different Palettes appear. Browse through it to find the block you need.</p>
 <p><img src="./img/palettes.gif" alt="palettes"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-11">
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><h3 id="connecting-wires">Connecting wires</h3>
 <p>To connect wires, simply <strong>left click</strong> to snap on to an output node of a block and <strong>left click again</strong> on the input node of another block</p>
 <p>If a wire is not connected properly, it appears as <strong>dashed lines</strong>. Use <strong>Ctrl+Z</strong> to undo or <strong>Ctrl+B</strong> to remove all <strong>broken wires</strong></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-12">
+  <div class="slide hidden" id="slide-13">
     <section class="slide-content"><h3 id="exercise-01">Exercise -- 01</h3>
 <ul>
 <li>Try placing some SubVIs on the block diagram and connect wires between them</li>
@@ -489,17 +466,17 @@ To view palettes, in <strong>Block diagram &gt;&gt; Right-click</strong> and dif
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-13">
+  <div class="slide hidden" id="slide-14">
     <section class="slide-content"><h1 id="day-02-arrays-and-for-loop">Day - 02: Arrays and for loop</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-14">
+  <div class="slide hidden" id="slide-15">
     <section class="slide-content"><h3 id="what-are-arrays-">What are arrays?</h3>
 <p>Arrays are a collection of elements of the same datatype. Its like having a stack of money. The value of each note in the stack can vary, but they all belong to the same &#39;data-type&#39; called money.</p>
 <p><img src="./img/money-stack.jpg" alt="money-stack"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-15">
+  <div class="slide hidden" id="slide-16">
     <section class="slide-content"><h3 id="examples-of-arrays-and-their-uses">Examples of arrays and their uses</h3>
 <p>Arrays can be formed with strings, numbers, booleans. There are also arrays of special datatypes, which will be discussed later.</p>
 <h2 id="examples">Examples</h2>
@@ -510,7 +487,7 @@ To view palettes, in <strong>Block diagram &gt;&gt; Right-click</strong> and dif
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-16">
+  <div class="slide hidden" id="slide-17">
     <section class="slide-content"><h3 id="dimension-of-an-array">Dimension of an array</h3>
 <ul>
 <li>A stack of postcards to deliver to a single street in our city is an 1D array.</li>
@@ -519,37 +496,37 @@ To view palettes, in <strong>Block diagram &gt;&gt; Right-click</strong> and dif
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-17">
+  <div class="slide hidden" id="slide-18">
     <section class="slide-content"><h3 id="creating-an-array-in-front-panel">Creating an array in front panel</h3>
 <p><img src="./img/array-front-panel.gif" alt="array-front-panel"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-18">
+  <div class="slide hidden" id="slide-19">
     <section class="slide-content"><h3 id="array-palette">Array palette</h3>
 <p><img src="./img/array-palette.gif" alt="array-palette"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-19">
+  <div class="slide hidden" id="slide-20">
     <section class="slide-content"><h3 id="creating-an-array-in-block-diagram">Creating an array in block diagram</h3>
 <p><img src="./img/array-block-diagram.gif" alt="array-block-diagram"></p>
 <h3 id="adding-dimesion-to-an-array">Adding dimesion to an array</h3>
 <p><img src="./img/add-dimension.gif" alt="add-dimension"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-20">
+  <div class="slide hidden" id="slide-21">
     <section class="slide-content"><h3 id="for-loop">For loop</h3>
 <p>A for loop is a rectangular structure, the logic in which is repeated N times</p>
 <p><img src="./img/for-loop.gif" alt="for-loop"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-21">
+  <div class="slide hidden" id="slide-22">
     <section class="slide-content"><h3 id="working-with-array-using-for-loop">working with array using for loop</h3>
 <p><strong>Auto-indexing</strong>. If you wire an array to a For Loop, you can read and process every element in that array by
 enabling auto-indexing</p>
 <p><img src="./img/auto-indexing.gif" alt="auto-indexing"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-22">
+  <div class="slide hidden" id="slide-23">
     <section class="slide-content"><h3 id="exercise-2">Exercise - 2</h3>
 <ul>
 <li>Take two 1D arrays <code>10,20,30,40,50</code> and <code>11,22,33,44,55</code>, add them element-wise and return an array</li>
@@ -559,11 +536,11 @@ enabling auto-indexing</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-23">
+  <div class="slide hidden" id="slide-24">
     <section class="slide-content"><h1 id="day-03-strings-enum-comparison-and-booleans">Day - 03: Strings, enum, comparison and Booleans</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-24">
+  <div class="slide hidden" id="slide-25">
     <section class="slide-content"><h3 id="strings">Strings</h3>
 <p>A string is a set of characters. strings are useful in processing human readable data using labview.</p>
 <p>The most common characters used in string are:</p>
@@ -574,59 +551,59 @@ enabling auto-indexing</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-25">
+  <div class="slide hidden" id="slide-26">
     <section class="slide-content"><h3 id="concatenate-strings">Concatenate strings</h3>
 <p><img src="./img/string-concatenate.gif" alt="string-concatenate"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-26">
+  <div class="slide hidden" id="slide-27">
     <section class="slide-content"><h3 id="string-manipulation">String manipulation</h3>
 <p>Strings are manipulated mainly using the following set of SubVis</p>
 <p><img src="./img/string-manipulation.gif" alt="string-manipulation"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-27">
+  <div class="slide hidden" id="slide-28">
     <section class="slide-content"><h3 id="string-formatting">String formatting</h3>
 <p>So your code generates some numbers, say your age, But you want to display it as a string to user. For this kind of problems we need the formatting SubVI.</p>
 <p><img src="./img/string-format.gif" alt="string-format"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-28">
+  <div class="slide hidden" id="slide-29">
     <section class="slide-content"><h3 id="string-number-conversions">String-Number conversions</h3>
 <p>Another way to add age (number) to your string is by first converting it into a string. For this go to <strong>string palette&gt;&gt;String/Number conversion</strong></p>
 <p><img src="./img/string-number-conversion.gif" alt="string-number-conversion"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-29">
+  <div class="slide hidden" id="slide-30">
     <section class="slide-content"><h3 id="shift-register">Shift register</h3>
 <p>If in loops we want to store values of previous iteration, we have to use <strong>shift registers</strong></p>
 <p><img src="./img/shift-register.gif" alt="shift-register"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-30">
+  <div class="slide hidden" id="slide-31">
     <section class="slide-content"><h3 id="enum">Enum</h3>
 <p>An <code>Enum</code> is a selectable list which gives out an integer</p>
 <p><img src="./img/enum" alt="enum"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-31">
+  <div class="slide hidden" id="slide-32">
     <section class="slide-content"><h3 id="booleans">Booleans</h3>
 <p><img src="./img/boolean.gif" alt="boolean"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-32">
+  <div class="slide hidden" id="slide-33">
     <section class="slide-content"><h3 id="uses-of-boolean">Uses of boolean</h3>
 <p>Booleans are used for Yes/No decisions. Is your age greater than 18? True/False.  1 &gt; 0 = True. All True and False decisions fall under boolean.</p>
 <p>Explore Boolean palette and find out how different blocks work.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-33">
+  <div class="slide hidden" id="slide-34">
     <section class="slide-content"><h3 id="comparison-palette">Comparison Palette</h3>
 <p>We can compare variables of different datatypes and make decisions in our code.</p>
 <p><img src="./img/comparison.gif" alt="comparison"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-34">
+  <div class="slide hidden" id="slide-35">
     <section class="slide-content"><h3 id="exercise-3">Exercise - 3</h3>
 <ul>
 <li>Let user input a 1D array of strings, concatenate the strings in a for loop with <code>\n</code> escape code inbetween</li>
@@ -638,35 +615,35 @@ enabling auto-indexing</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-35">
+  <div class="slide hidden" id="slide-36">
     <section class="slide-content"><h1 id="day-04-while-loop">Day - 04: While loop</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-36">
+  <div class="slide hidden" id="slide-37">
     <section class="slide-content"><h3 id="while-loop">While loop</h3>
 <p>While loop repeats execution of its contents unless some conditions are met. Make a condition (say check if iteration i&gt;10) and wire it to condition terminal.</p>
 <p><img src="./img/while-loop.gif" alt="while-loop"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-37">
+  <div class="slide hidden" id="slide-38">
     <section class="slide-content"><h3 id="case-structure">Case structure</h3>
 <p>Used if you want to execute two different set of codes for different conditions. Like if it is raining outside, I will take an umbrella, If it is hot outside, I will use sunscreen, and If it is cold outside, I will use some cream.</p>
 <p><img src="./img/case.gif" alt="case"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-38">
+  <div class="slide hidden" id="slide-39">
     <section class="slide-content"><h3 id="delay-in-loops">Delay in loops</h3>
 <p>Sometimes loops have to be run slowly than it can, so that the processor is not under heavy load. Using <code>wait</code> inside loops helps in using resources more aptly as the solution needs.</p>
 <p><img src="./img/wait.gif" alt="wait"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-39">
+  <div class="slide hidden" id="slide-40">
     <section class="slide-content"><h3 id="date-and-time">Date and time</h3>
 <p>Timing palette has all that we need to bring time into the picture. If we want to add timestamps to our code, to show the user date and time.</p>
 <p><img src="./img/date-time.gif" alt="date-time"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-40">
+  <div class="slide hidden" id="slide-41">
     <section class="slide-content"><h3 id="exercise-4-part-1">Exercise - 4 - part-1</h3>
 <ul>
 <li>Make an enum with keys <code>hot, warm, cold</code>. Using a case structure and an infinite loop, display a custom message for each selection that the user makes anytime the program runs (dont forget to add a wait in the loop). 
@@ -675,28 +652,31 @@ For example, if user selects <code>hot</code>, you can tell the user <code>Welco
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-41">
+  <div class="slide hidden" id="slide-42">
     <section class="slide-content"><h3 id="exercise-4-part-2">Exercise - 4 - part-2</h3>
 <ul>
 <li>Write a program that asks the user for a number <code>n</code> and gives him the possibility to choose between computing the <code>sum</code> and computing the <code>product</code> of <code>1,. . .,n</code>. And returns the value of <code>sum()</code> or <code>product()</code> obtained.</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-42">
+  <div class="slide hidden" id="slide-43">
     <section class="slide-content"><h3 id="exercise-4-part-3">Exercise - 4 - part-3</h3>
 <ul>
-<li>Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array <code>[&quot;Hello&quot;, &quot;World&quot;, &quot;in&quot;, &quot;a&quot;, &quot;frame&quot;]</code> gets printed as(Use <code>while-loop</code>):</li>
+<li><p>Write a program that takes a array of strings and prints them, one per line, in a rectangular frame. For example the array <code>[&quot;Hello&quot;, &quot;World&quot;, &quot;in&quot;, &quot;a&quot;, &quot;frame&quot;]</code> gets printed as(Use <code>while-loop</code>):</p>
+<hr>
+<ul>
+<li>Hello *</li>
+<li>World *</li>
+<li>in    *</li>
+<li>a     *</li>
+<li>frame *</li>
 </ul>
-<pre><code>*********
-* Hello *
-* World *
-* in    *
-* a     *
-* frame *
-*********</code></pre>
+<hr>
+</li>
+</ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-43">
+  <div class="slide hidden" id="slide-44">
     <section class="slide-content"><h3 id="exercise-4-part-4">Exercise - 4 - part-4</h3>
 <ul>
 <li>Make a digital clock that displays time in format <code>HH-MM-SS AM/PM</code>.</li>
@@ -704,18 +684,18 @@ For example, if user selects <code>hot</code>, you can tell the user <code>Welco
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-44">
+  <div class="slide hidden" id="slide-45">
     <section class="slide-content"><h1 id="day-05-files-and-event-structure">Day - 05: Files, and Event structure</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-45">
+  <div class="slide hidden" id="slide-46">
     <section class="slide-content"><h3 id="file-palette">File Palette</h3>
 <p>Using file palette we can read and write files.</p>
 <p>A text file example:
 <img src="./img/read-file.gif" alt="read-file"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-46">
+  <div class="slide hidden" id="slide-47">
     <section class="slide-content"><h3 id="types-of-files">Types of files</h3>
 <p>Some common file types that we use mostly are:</p>
 <ul>
@@ -724,25 +704,25 @@ For example, if user selects <code>hot</code>, you can tell the user <code>Welco
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-47">
+  <div class="slide hidden" id="slide-48">
     <section class="slide-content"><h3 id="manipulating-file-path">Manipulating file path</h3>
 <p>File path is the address to reach a file, to read or write or append or delete or any operations on it.
 <img src="./img/build-strip-path.gif" alt="build-strip-path"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-48">
+  <div class="slide hidden" id="slide-49">
     <section class="slide-content"><h3 id="file-constants">file constants</h3>
 <p>File constants can be used to get default directories, the VIs path, VIs directory.</p>
 <p><img src="./img/file-constants.gif" alt="file-constants"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-49">
+  <div class="slide hidden" id="slide-50">
     <section class="slide-content"><h3 id="event-structure">Event structure</h3>
 <p>An event structure is used to capture events like user mouse click or value change in front-panel and more...
 <img src="./img/event-structure.gif" alt="event-structure"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-50">
+  <div class="slide hidden" id="slide-51">
     <section class="slide-content"><h3 id="exercise-5-part-1">Exercise - 5 - part-1</h3>
 <ul>
 <li>Using LV, Create a textfile in you name (name.txt) and write in it <code>Hello world!</code></li>
@@ -750,7 +730,7 @@ For example, if user selects <code>hot</code>, you can tell the user <code>Welco
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-51">
+  <div class="slide hidden" id="slide-52">
     <section class="slide-content"><h3 id="exercise-5-part-2">Exercise - 5 - part-2</h3>
 <ul>
 <li>Place an event structure in an infinite while loop and place atleast 3 different controls (numeric, buttons, sliders etc).
@@ -758,7 +738,7 @@ On <code>value change</code> of any of the controls, the latest of which was cha
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-52">
+  <div class="slide hidden" id="slide-53">
     <section class="slide-content"><h3 id="exercise-5-part-3">Exercise - 5 - part-3</h3>
 <ul>
 <li>Let user give a file directory path, filename and text input in a continuously running VI. Once a button <code>write this</code> is clicked, a new file of the name
@@ -766,17 +746,17 @@ given should be created in the destination given, with the contents typed by the
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-53">
+  <div class="slide hidden" id="slide-54">
     <section class="slide-content"><h1 id="day-06-test-what-we-learnt-and-some-philosophy-">Day - 06: Test what we learnt and some philosophy!</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-54">
+  <div class="slide hidden" id="slide-55">
     <section class="slide-content"><h3 id="15-questions-45-minutes">15 Questions, 45 minutes</h3>
 <p>Access this form and submit your answers. </p>
 <p><a href="https://docs.google.com/forms/d/1YQxDD_IVMAaq2yPeJQrI5E5ekSxnY4RwtjZO7RdfJuM/viewform?usp=send_form">test-01</a></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-55">
+  <div class="slide hidden" id="slide-56">
     <section class="slide-content"><h3 id="programming-philosophy-01">Programming philosophy - 01</h3>
 <p>To create any software for a defined problem, this is one of the methods to work on it (The Software Method):</p>
 <ol>
@@ -788,7 +768,7 @@ given should be created in the destination given, with the contents typed by the
 </ol>
 </section>
   </div>
-  <div class="slide hidden " id="slide-56">
+  <div class="slide hidden" id="slide-57">
     <section class="slide-content"><h3 id="scenario">Scenario</h3>
 <p>During the scenario stage of the software development method, you define
 what your problem is so that you can approach it with all the necessary
@@ -798,7 +778,7 @@ problem initially can save you time while you design and implement a
 solution</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-57">
+  <div class="slide hidden" id="slide-58">
     <section class="slide-content"><h3 id="design">Design</h3>
 <ul>
 <li>Identify the Inputs</li>
@@ -808,14 +788,14 @@ solution</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-58">
+  <div class="slide hidden" id="slide-59">
     <section class="slide-content"><h3 id="implementation">Implementation</h3>
 <p>In the implementation stage, you create code for your algorithm or
 flowchart. Because LabVIEW is a graphical programming
 language, the flowchart works much the same way.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-59">
+  <div class="slide hidden" id="slide-60">
     <section class="slide-content"><h3 id="testing">Testing</h3>
 <p>Testing and verifying is an important part of the software development
 method. Make sure to test your implementation with data that is both logical
@@ -824,13 +804,13 @@ the inputs produce the expected result. By testing illogical data, you can test
 to see if the code has effective error handling</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-60">
+  <div class="slide hidden" id="slide-61">
     <section class="slide-content"><h3 id="maintenance">Maintenance</h3>
 <p>Maintenance is the ongoing process of resolving programming errors and
 adding parallel construction changes to the original solution for a problem.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-61">
+  <div class="slide hidden" id="slide-62">
     <section class="slide-content"><h3 id="exercises-6-part-1">Exercises - 6 - part-1</h3>
 <ul>
 <li>Go to <a href="http://www.gliffy.com">gliffy</a> or choose any other diagram editor. Create a flow chart for the following problem.</li>
@@ -839,7 +819,7 @@ adding parallel construction changes to the original solution for a problem.</p>
 The Initialize Array function and Build Array function are used and the For Loop sets its count by auto-indexing the input array.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-62">
+  <div class="slide hidden" id="slide-63">
     <section class="slide-content"><h3 id="exercises-6-part-2">Exercises - 6 - part-2</h3>
 <ul>
 <li>Implement the previous problem</li>
@@ -848,64 +828,64 @@ Process two sets of data and return the intersection and/or the union of the two
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-63">
+  <div class="slide hidden" id="slide-64">
     <section class="slide-content"><h3 id="references">References</h3>
 <ul>
 <li>Questions in Test-01 are taken from <a href="http://www.ni.com/gate/gb/GB_EKITCLADEXMPRP/US">CLAD Q&amp;A from NI</a>.</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-64">
+  <div class="slide hidden" id="slide-65">
     <section class="slide-content"><h1 id="day-07-clusters">Day - 07: Clusters</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-65">
+  <div class="slide hidden" id="slide-66">
     <section class="slide-content"><h3 id="cluster">Cluster</h3>
 <p>When we want to group a set of variables/controls/indicators of different datatypes, we use a cluster.
 <img src="./img/cluster.gif" alt="cluster-control"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-66">
+  <div class="slide hidden" id="slide-67">
     <section class="slide-content"><h3 id="cluster-indicator-controls-and-constant">Cluster indicator, controls and constant</h3>
 <p>A cluster can be set as a control, indicator or a constant.</p>
 <p><img src="./img/cluster-ctrl-indicator-constant.gif" alt="cluster"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-67">
+  <div class="slide hidden" id="slide-68">
     <section class="slide-content"><h3 id="cluster-palette">Cluster palette</h3>
 <p>Cluster palette contains VIs that can be used to manipulate clusters.
 <img src="./img/cluster-palette.gif" alt="cluster-palette"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-68">
+  <div class="slide hidden" id="slide-69">
     <section class="slide-content"><h1 id="day-08-waveform-math-and-express-vis">Day - 08: Waveform, Math, and Express VIs</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-69">
+  <div class="slide hidden" id="slide-70">
     <section class="slide-content"><h3 id="waveform-graph">Waveform graph</h3>
 <p>A waveform graph is used to display waveforms:
 <img src="./img/graph.gif" alt="graph"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-70">
+  <div class="slide hidden" id="slide-71">
     <section class="slide-content"><h3 id="math-palette">Math palette</h3>
 <p>Math palette is used to generate math functions like sine, cosine, or in cases of fitting data like using least-squares best fit.
 There are many other use cases for this palette.
 <img src="./img/math-palette.gif" alt="math-palette"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-71">
+  <div class="slide hidden" id="slide-72">
     <section class="slide-content"><h3 id="generate-sine-signal">Generate sine signal</h3>
 <p><img src="./img/sine-signal.gif" alt="sine-signal"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-72">
+  <div class="slide hidden" id="slide-73">
     <section class="slide-content"><h3 id="express-vis">Express VIs</h3>
 <p>Express VIs make life easier. They are useful when we need to implement things fast and easy, and customization is not very important.
 <img src="./img/express.gif" alt="express"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-73">
+  <div class="slide hidden" id="slide-74">
     <section class="slide-content"><h3 id="exercise-8-part-01">Exercise - 8 - Part 01</h3>
 <ul>
 <li>Generate a sine(x) and a cosine(x) signal for the same <code>x</code>. prove by plotting the equation <code>sin(x)^2 + cos(x)^2 = 1</code></li>
@@ -914,7 +894,7 @@ At the end the number of tries needed should be printed. I counts only as one tr
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-74">
+  <div class="slide hidden" id="slide-75">
     <section class="slide-content"><h3 id="exercise-8-part-02">Exercise - 8 - Part 02</h3>
 <ul>
 <li>Write a function that computes the list of the first 100 Fibonacci numbers.</li>
@@ -922,49 +902,53 @@ At the end the number of tries needed should be printed. I counts only as one tr
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-75">
+  <div class="slide hidden" id="slide-76">
+    <section class="slide-content"><h1 id="day-9-state-machines">Day 9: State machines</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-77">
     <section class="slide-content"><h1 id="day-10-state-machines-continued">Day 10: State machines: ..continued</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-76">
+  <div class="slide hidden" id="slide-78">
     <section class="slide-content"><h3 id="use-of-event-structure-in-poll">Use of event structure in poll</h3>
 <p>Event structure saves effort and is more reactive than handling buttons by any other logic
 <img src="./img/state-machine-event.gif" alt="state-machine-event"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-77">
+  <div class="slide hidden" id="slide-79">
     <section class="slide-content"><h3 id="other-routing-options-enum-arrays">Other routing options: Enum arrays</h3>
 <p>Instead of placing a enum and routing in every case, we can move most of the routing logic to the poll case. 
 Try using a array of enum and some array functions.</p>
 <p><img src="./img/state-machine-enum-array.gif" alt="state-machine-enum-array"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-78">
+  <div class="slide hidden" id="slide-80">
     <section class="slide-content"><h3 id="other-routing-options-array-of-strings">Other routing options: array of strings</h3>
 <p><img src="./img/state-machine-string-array.gif" alt="state-machine-string-array"></p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-79">
+  <div class="slide hidden" id="slide-81">
     <section class="slide-content"><h3 id="exercise-10">Exercise: 10</h3>
 <p>Create a state diagram and implement a stop watch timer.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-80">
+  <div class="slide hidden" id="slide-82">
     <section class="slide-content"><h1 id="day-11-daq-and-max">Day 11: DAQ and MAX</h1>
 </section>
   </div>
-  <div class="slide hidden " id="slide-81">
+  <div class="slide hidden" id="slide-83">
     <section class="slide-content"><h3 id="daq">DAQ</h3>
 <p>Data AcQusition card is used to measure electrical signals. NI&#39;s DAQ comes in various sizes and form factors, with varying capabilities.
 Primarily used to capture signals, they are easy to configure and use.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-82">
+  <div class="slide hidden" id="slide-84">
     <section class="slide-content"><h3 id="max">MAX</h3>
 <p>The Measurement and Automation eXplorer is a software that comes along with DAQ. It is used to maintain various devices connected or not-connected. We can create devices that simulate real devices and generate simple signal, this is useful to test our code, incase we dont have a device setup realtime.</p>
 </section>
   </div>
-  <div class="slide hidden " id="slide-83">
+  <div class="slide hidden" id="slide-85">
     <section class="slide-content"><h3 id="exercise-11">Exercise: 11</h3>
 <ul>
 <li>Create a simulation device (any device of your choice), sample the lines at 100Hz, store to a labview database (tdms file). Hint: use DAQ Assistant.</li>
@@ -972,7 +956,7 @@ Primarily used to capture signals, they are easy to configure and use.</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden " id="slide-84">
+  <div class="slide hidden" id="slide-86">
     <section class="slide-content"><h3 id="to-work-on">TO Work on</h3>
 <ul>
 <li>waveform graph, Create EXE</li>
@@ -981,7 +965,7 @@ Primarily used to capture signals, they are easy to configure and use.</p>
 </ul>
 </section>
   </div>
-  <div class="slide hidden" id="slide-85">
+  <div class="slide hidden author-slide" id="slide-87">
     <section class="slide-content"><div class="author">
   <h1 class="name">Prashanth Gandhiraj</h1>
     <h3 class="twitter">
@@ -1036,7 +1020,11 @@ function navigate(n) {
  * Updates the current URL to include a hashtag of the current page number.
  */
 function updateURL() {
-  window.history.replaceState({} , null, '#' + currentPosition());
+  try {
+    window.history.replaceState({} , null, '#' + currentPosition());
+  } catch (e) {
+    window.location.hash = currentPosition();
+  }
 }
 
 
