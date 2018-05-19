@@ -18,9 +18,14 @@ List of topics we would be discussing in this course:
 
 * [Day-1: Introduction to Labview](./course.html#3)
 * [Day-2: Arrays and for loop](./course.html#13)
-* [Day-3: Strings, enum, Boolean and Comparison](./course.html#13)
-* [Day-4: While loop](./course.html#13)
-* [Day-5: Files, and Event structure](./course.html#13)
+* [Day-3: Strings, enum, Boolean and Comparison](./course.html#23)
+* [Day-4: While loop](./course.html#35)
+* [Day-5: Files, and Event structure](./course.html#44)
+* [Day - 06: Test what we learnt so far and some programming philosophy](./course.html#53)
+* [Day - 07: Clusters](./course.html#64)
+* [Day - 08: Waveform, Math, and Express VIs](./course.html#68)
+* [Day 10: State machines](./course.html#75)
+* [Day 11: DAQ and MAX](./course.html#80)
 
 --
 # Day - 01: Introduction to Labview
